@@ -1,0 +1,61 @@
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+dist-ssr/
+build/
+out/
+target/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle (backend)
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+gradlew.bat
+local.properties
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+logs/
+
+# Data
+data/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary
+*.tmp
+*.bak
+*.swp
+
+# Project specific
+Recursos/
+qprompt/
+docs/
+pnpm-workspace.yaml

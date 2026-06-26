@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Food Store Admin</title>
+    <link rel="stylesheet" href="../../../../src/style.css" />
+    <link rel="stylesheet" href="./adminHome.css" />
+  </head>
+  <body class="admin-page">
+    <header>
+      <h1 class="navbar-title">Food Store</h1>
+      <nav>
+        <ul class="navbar-menu"></ul>
+      </nav>
+      <hr />
+    </header>
+    <div class="admin-layout">
+      <aside class="admin-sidebar">
+        <h2>Administración</h2>
+        <nav>
+          <ul>
+            <li><a href="/src/pages/admin/adminHome/adminHome.html" class="active">Dashboard</a></li>
+            <li><a href="/src/pages/admin/categories/categories.html">Categorías</a></li>
+            <li><a href="/src/pages/admin/products/products.html">Productos</a></li>
+            <li><a href="/src/pages/admin/orders/orders.html">Pedidos</a></li>
+            <li><a href="/src/pages/store/home/home.html">Ver Tienda</a></li>
+          </ul>
+        </nav>
+        <div class="admin-sidebar-footer">
+          <a href="#" id="logout-link">Cerrar Sesión</a>
+        </div>
+      </aside>
+      <main class="admin-main">
+        <div class="admin-main-content">
+          <h1>Panel de Administración</h1>
+          <section class="stats-grid" data-stats-grid></section>
+          <section class="admin-resumen" data-admin-resumen></section>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="../../../../src/routeGuard.ts"></script>
+    <script type="module" src="./adminHome.ts"></script>
+    <script type="module" src="../../../../src/auth/logout.ts"></script>
+  </body>
+</html>

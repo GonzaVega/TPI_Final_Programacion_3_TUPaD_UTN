@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Pedidos - Food Store</title>
+    <link rel="stylesheet" href="../../../../src/style.css" />
+    <link rel="stylesheet" href="./orders.css" />
+  </head>
+  <body class="store-page">
+    <header>
+      <h1 class="navbar-title">Food Store</h1>
+      <nav>
+        <ul class="navbar-menu"></ul>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <h2>Mis Pedidos</h2>
+      <section class="orders-list" data-orders-list></section>
+    </main>
+
+    <footer>
+      <p>
+        Derechos reservados Food Store S.A.; 2026<br />Contacto:
+        info@foodstore.com
+      </p>
+    </footer>
+
+    <script type="module" src="../../../../src/routeGuard.ts"></script>
+    <script type="module" src="./orders.ts"></script>
+    <script type="module" src="../../../../src/auth/logout.ts"></script>
+  </body>
+</html>

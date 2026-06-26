@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store</title>
+    <link rel="stylesheet" href="../../../../src/style.css" />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body class="store-page">
+    <header>
+      <h1 class="navbar-title">Food Store</h1>
+      <nav>
+        <ul class="navbar-menu"></ul>
+      </nav>
+      <hr />
+    </header>
+    <aside>
+      <h2>Categorias</h2>
+      <ul class="category-list"></ul>
+    </aside>
+    <main>
+      <form>
+        <input type="text" placeholder="Buscar..." title="Buscar" />
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="sort-bar">
+        <label for="sort-select">Ordenar por:</label>
+        <select id="sort-select">
+          <option value="">Por defecto</option>
+          <option value="name-asc">Nombre A-Z</option>
+          <option value="name-desc">Nombre Z-A</option>
+          <option value="price-asc">Precio: menor a mayor</option>
+          <option value="price-desc">Precio: mayor a menor</option>
+        </select>
+      </div>
+      <section class="product-list"></section>
+    </main>
+    <footer>
+      <p>
+        Derechos reservados Food Store S.A.; 2026<br />Contacto:
+        info@foodstore.com
+      </p>
+    </footer>
+    <script type="module" src="../../../../src/routeGuard.ts"></script>
+    <script type="module" src="./home.ts"></script>
+    <script type="module" src="../../../../src/auth/logout.ts"></script>
+  </body>
+</html>

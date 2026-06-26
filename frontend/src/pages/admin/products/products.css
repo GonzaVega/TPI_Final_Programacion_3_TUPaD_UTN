@@ -1,0 +1,259 @@
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.products-header h1 {
+  margin-bottom: 0;
+}
+
+.products-header button {
+  font-size: 14px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+td:last-child,
+th:last-child {
+  text-align: center;
+}
+
+td:last-child {
+  white-space: nowrap;
+}
+
+td:last-child button {
+  padding: 6px 12px;
+  font-size: 12px;
+  text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+td:last-child button + button {
+  margin-left: 6px;
+}
+
+button.danger {
+  background-color: #dc2626;
+}
+
+button.danger:hover {
+  background-color: #b91c1c;
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.status-badge.available {
+  background-color: #22c55e;
+}
+
+.status-badge.unavailable {
+  background-color: #ef4444;
+}
+
+.status-badge.no-stock {
+  background-color: #999;
+}
+
+/* --- Modal --- */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background-color: var(--color-blanco);
+  border-radius: 12px;
+  max-width: 480px;
+  width: 90%;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #666;
+  line-height: 1;
+  padding: 0 4px;
+  z-index: 1;
+}
+
+.modal-close:hover {
+  color: var(--color-texto);
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  color: var(--color-primario);
+  margin-bottom: 16px;
+}
+
+#product-form label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 0 4px;
+}
+
+#product-form input,
+#product-form select,
+#product-form textarea {
+  width: 100%;
+  border: 1px solid #f2b2a6;
+}
+
+#product-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+#product-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.checkbox-group label {
+  margin: 0;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.modal-actions button {
+  flex: 1;
+}
+
+.modal-actions button.danger {
+  background-color: #dc2626;
+}
+
+.modal-actions button.danger:hover {
+  background-color: #b91c1c;
+}
+
+.modal-feedback {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-exito);
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .products-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .modal-content {
+    padding: 14px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .table-wrapper table,
+  .table-wrapper thead,
+  .table-wrapper tbody,
+  .table-wrapper tr,
+  .table-wrapper td {
+    display: block;
+  }
+
+  .table-wrapper thead {
+    display: none;
+  }
+
+  .table-wrapper tr {
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .table-wrapper td {
+    border: none;
+    padding: 4px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .table-wrapper td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    font-size: 12px;
+    color: #777;
+    text-transform: uppercase;
+    min-width: 90px;
+    flex-shrink: 0;
+  }
+
+  .table-wrapper td img {
+    margin: 0;
+  }
+
+  .table-wrapper td:last-child {
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 8px;
+  }
+}
