@@ -117,7 +117,6 @@ const renderSinResultados: (container: Element) => void = (
   container.appendChild(message);
 };
 
-// --- Modal State ---
 let modalProduct: Product | null = null;
 let modalQuantity: number = 1;
 
@@ -191,7 +190,8 @@ const renderDetailModal: () => void = () => {
   document.body.appendChild(overlay);
   document.body.style.overflow = "hidden";
 
-  overlay.querySelector<HTMLButtonElement>(".modal-close")
+  overlay
+    .querySelector<HTMLButtonElement>(".modal-close")
     ?.addEventListener("click", closeDetailModal);
 
   overlay.addEventListener("click", (e) => {
@@ -208,8 +208,9 @@ const renderDetailModal: () => void = () => {
     overlay.querySelector<HTMLElement>("#modal-qty-display");
   const addBtn: HTMLButtonElement | null =
     overlay.querySelector<HTMLButtonElement>("#modal-add-btn");
-  const feedbackEl: HTMLElement | null =
-    overlay.querySelector<HTMLElement>("#modal-add-feedback");
+  const feedbackEl: HTMLElement | null = overlay.querySelector<HTMLElement>(
+    "#modal-add-feedback",
+  );
 
   const updateQtyDisplay = () => {
     if (qtyDisplay) qtyDisplay.textContent = String(modalQuantity);
@@ -285,9 +286,7 @@ const cargarProductos: (productsToRender: Product[]) => void = (
 
     const button: HTMLButtonElement = document.createElement("button");
     button.type = "button";
-    button.textContent = isAvailable
-      ? "Agregar al carrito"
-      : "Sin stock";
+    button.textContent = isAvailable ? "Agregar al carrito" : "Sin stock";
     button.disabled = !isAvailable;
     button.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -394,7 +393,9 @@ document.addEventListener("keydown", (e) => {
 const init: () => Promise<void> = async () => {
   try {
     categorias = await fetchJson<ICategory[]>("/data/categorias.json");
-    const allProducts: Product[] = await fetchJson<Product[]>("/data/productos.json");
+    const allProducts: Product[] = await fetchJson<Product[]>(
+      "/data/productos.json",
+    );
     products = allProducts.filter((p) => p.disponible && !p.eliminado);
   } catch (err) {
     console.error("Error al cargar datos:", err);

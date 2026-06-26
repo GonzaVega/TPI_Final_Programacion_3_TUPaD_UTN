@@ -37,10 +37,10 @@ El proyecto quedará disponible en http://localhost:5173
 
 ## Credenciales de prueba
 
-| Rol | Email | Contraseña |
-|-----|-------|------------|
-| ADMIN | admin@test.com | password123 |
-| USUARIO | usuario@test.com | password123 |
+| Rol     | Email          | Contraseña  |
+| ------- | -------------- | ----------- |
+| ADMIN   | admin@test.com | password123 |
+| USUARIO | juan@perez.com | password123 |
 
 ## Scripts disponibles
 

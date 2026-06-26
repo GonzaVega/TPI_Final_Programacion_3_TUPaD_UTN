@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pizza Muzzarella",
+    "precio": 4500.0,
+    "descripcion": "Pizza clásica con salsa de tomate y muzzarella derretida",
+    "stock": 20,
+    "imagen": "/images/products/Pizzas/muzzarella.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 1
+  },
+  {
+    "id": 2,
+    "nombre": "Pizza Napolitana",
+    "precio": 5200.0,
+    "descripcion": "Pizza con rodajas de tomate fresco, ajo y albahaca",
+    "stock": 15,
+    "imagen": "/images/products/Pizzas/napolitana.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 1
+  },
+  {
+    "id": 3,
+    "nombre": "Pizza Especial 4 Quesos",
+    "precio": 6800.0,
+    "descripcion": "Muzzarella, provolone, roquefort y parmesano",
+    "stock": 10,
+    "imagen": "/images/products/Pizzas/4quesos.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 1
+  },
+  {
+    "id": 4,
+    "nombre": "Hamburguesa Clásica",
+    "precio": 3800.0,
+    "descripcion": "Medallón de carne, lechuga, tomate, cebolla y mayo",
+    "stock": 30,
+    "imagen": "/images/products/Hamburguesas/clasica.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 2
+  },
+  {
+    "id": 5,
+    "nombre": "Hamburguesa BBQ Bacon",
+    "precio": 5100.0,
+    "descripcion": "Doble medallón, bacon crocante y salsa barbacoa ahumada",
+    "stock": 25,
+    "imagen": "/images/products/Hamburguesas/BBQ.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 2
+  },
+  {
+    "id": 6,
+    "nombre": "Hamburguesa Veggie",
+    "precio": 4200.0,
+    "descripcion": "Medallón de lentejas y garbanzo, cheddar vegano y rúcula",
+    "stock": 0,
+    "imagen": "/images/products/Hamburguesas/veguie.jpeg",
+    "disponible": false,
+    "eliminado": false,
+    "categoriaId": 2
+  },
+  {
+    "id": 7,
+    "nombre": "Coca-Cola 500ml",
+    "precio": 1200.0,
+    "descripcion": "Gaseosa Coca-Cola fría, botella personal",
+    "stock": 100,
+    "imagen": "/images/products/Bebidas/coca500.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 3
+  },
+  {
+    "id": 8,
+    "nombre": "Jugo de Naranja Natural",
+    "precio": 1800.0,
+    "descripcion": "Jugo exprimido en el momento, vaso 400ml",
+    "stock": 40,
+    "imagen": "/images/products/Bebidas/jugo-naranja.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 3
+  },
+  {
+    "id": 9,
+    "nombre": "Agua Mineral 500ml",
+    "precio": 800.0,
+    "descripcion": "Agua mineral sin gas, botella personal",
+    "stock": 150,
+    "imagen": "/images/products/Bebidas/agua500.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 3
+  },
+  {
+    "id": 10,
+    "nombre": "Torta Rogel",
+    "precio": 3500.0,
+    "descripcion": "Torta rogel tradicional con dulce de leche y merengue",
+    "stock": 12,
+    "imagen": "/images/products/Postres/rogel.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 4
+  },
+  {
+    "id": 11,
+    "nombre": "Helado Artesanal 2 gustos",
+    "precio": 2800.0,
+    "descripcion": "Pote de 250g, elegí 2 gustos entre 12 opciones",
+    "stock": 30,
+    "imagen": "/images/products/Postres/helado.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 4
+  },
+  {
+    "id": 12,
+    "nombre": "Brownie con Helado",
+    "precio": 2200.0,
+    "descripcion": "Brownie de chocolate tibio con bocha de vainilla",
+    "stock": 0,
+    "imagen": "/images/products/Postres/brownie-helado.jpeg",
+    "disponible": false,
+    "eliminado": false,
+    "categoriaId": 4
+  },
+  {
+    "id": 13,
+    "nombre": "Empanadas de Carne x6",
+    "precio": 3000.0,
+    "descripcion": "Empanadas criollas de carne cortada a cuchillo, horneadas",
+    "stock": 50,
+    "imagen": "/images/products/Empanadas/carne.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 5
+  },
+  {
+    "id": 14,
+    "nombre": "Empanadas de Pollo x6",
+    "precio": 2800.0,
+    "descripcion": "Empanadas de pollo con morrón y verdeo, horneadas",
+    "stock": 45,
+    "imagen": "/images/products/Empanadas/pollo.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 5
+  },
+  {
+    "id": 15,
+    "nombre": "Empanadas de Jamón y Queso x6",
+    "precio": 2500.0,
+    "descripcion": "Empanadas fritas con jamón cocido y queso fundido",
+    "stock": 60,
+    "imagen": "/images/products/Empanadas/jyq.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 5
+  },
+  {
+    "id": 16,
+    "nombre": "Ensalada César",
+    "precio": 3200.0,
+    "descripcion": "Lechuga romana, crutones, parmesano y aderezo césar",
+    "stock": 20,
+    "imagen": "/images/products/Ensaladas/cesar.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 6
+  },
+  {
+    "id": 17,
+    "nombre": "Ensalada Caprese",
+    "precio": 2900.0,
+    "descripcion": "Tomate, muzzarella fresca, albahaca y aceite de oliva",
+    "stock": 18,
+    "imagen": "/images/products/Ensaladas/caprese.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 6
+  },
+  {
+    "id": 18,
+    "nombre": "Pizza Fugazzeta",
+    "precio": 5500.0,
+    "descripcion": "Pizza rellena de muzzarella con cebolla caramelizada",
+    "stock": 10,
+    "imagen": "/images/products/Pizzas/fugazzeta.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 1
+  },
+  {
+    "id": 19,
+    "nombre": "Hamburguesa Crispy Chicken",
+    "precio": 4600.0,
+    "descripcion": "Pollo apanado crocante, coleslaw y salsa honey mustard",
+    "stock": 0,
+    "imagen": "/images/products/Hamburguesas/crispy-chicken.jpeg",
+    "disponible": false,
+    "eliminado": false,
+    "categoriaId": 2
+  },
+  {
+    "id": 20,
+    "nombre": "Ensalada Mixta",
+    "precio": 2400.0,
+    "descripcion": "Lechuga, tomate, zanahoria rallada y aceitunas",
+    "stock": 25,
+    "imagen": "/images/products/Ensaladas/mixta.jpeg",
+    "disponible": true,
+    "eliminado": false,
+    "categoriaId": 6
+  }
+]

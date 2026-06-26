@@ -50,8 +50,6 @@ button.danger:hover {
   background-color: #b91c1c;
 }
 
-/* --- Modal --- */
-
 .modal-overlay {
   position: fixed;
   inset: 0;

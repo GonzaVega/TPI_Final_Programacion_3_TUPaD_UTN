@@ -33,13 +33,19 @@ public final class DataSeeder {
         Producto p1 = Producto.builder().nombre("Smartphone").precio(599.99).descripcion("Teléfono inteligente").stock(10).disponible(true).build();
         Producto p2 = Producto.builder().nombre("Remera").precio(19.99).descripcion("Remera de algodón").stock(50).disponible(true).build();
         Producto p3 = Producto.builder().nombre("Notebook").precio(999.99).descripcion("Computadora portátil").stock(5).disponible(true).build();
+        Producto p4 = Producto.builder().nombre("Auriculares Bluetooth").precio(89.99).descripcion("Auriculares inalámbricos").stock(20).disponible(true).build();
+        Producto p5 = Producto.builder().nombre("Lámpara de Mesa").precio(45.50).descripcion("Lámpara decorativa para escritorio").stock(15).disponible(true).build();
+        Producto p6 = Producto.builder().nombre("Mochila").precio(35.00).descripcion("Mochila escolar impermeable").stock(25).disponible(true).build();
 
         // Se asocia vía setCategoria() y se persisten los productos por separado.
         // La relación es bidireccional: Categoria tiene @OneToMany(mappedBy = "categoria")
         // y Producto tiene @ManyToOne. El lado owning es Producto.
         p1.setCategoria(c1);
         p3.setCategoria(c1);
+        p4.setCategoria(c1);
         p2.setCategoria(c2);
+        p6.setCategoria(c2);
+        p5.setCategoria(c3);
 
         categoriaRepo.guardar(c1);
         categoriaRepo.guardar(c2);
@@ -48,6 +54,9 @@ public final class DataSeeder {
         productoRepo.guardar(p1);
         productoRepo.guardar(p2);
         productoRepo.guardar(p3);
+        productoRepo.guardar(p4);
+        productoRepo.guardar(p5);
+        productoRepo.guardar(p6);
 
         EntityManager em = JPAUtil.getEntityManagerFactory().createEntityManager();
         try {

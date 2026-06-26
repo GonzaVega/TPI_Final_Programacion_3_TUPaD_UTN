@@ -119,8 +119,6 @@
   text-align: center;
 }
 
-/* --- Modal styles (reused from home.css for checkout) --- */
-
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -158,8 +156,6 @@
 .modal-close:hover {
   color: var(--color-texto);
 }
-
-/* --- Checkout modal --- */
 
 .checkout-modal .modal-content {
   max-width: 420px;

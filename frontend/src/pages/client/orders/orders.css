@@ -74,8 +74,6 @@
   color: var(--color-primario);
 }
 
-/* --- Modal detail --- */
-
 .modal-overlay {
   position: fixed;
   inset: 0;

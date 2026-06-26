@@ -31,7 +31,8 @@ const loadLinks: () => void = () => {
   linksList.appendChild(homeLi);
 
   const ordersLi: HTMLElement = document.createElement("li");
-  ordersLi.innerHTML = '<a href="/src/pages/client/orders/orders.html">Mis Pedidos</a>';
+  ordersLi.innerHTML =
+    '<a href="/src/pages/client/orders/orders.html">Mis Pedidos</a>';
   linksList.appendChild(ordersLi);
 
   const cartLi: HTMLElement = document.createElement("li");
@@ -172,8 +173,6 @@ const renderCartItems: () => void = () => {
   });
 };
 
-// --- Order persistence ---
-
 const getOrders: () => Order[] = () => {
   const raw: string | null = localStorage.getItem(ORDERS_KEY);
   if (!raw) return [];
@@ -188,8 +187,6 @@ const getOrders: () => Order[] = () => {
 const saveOrders: (orders: Order[]) => void = (orders: Order[]) => {
   localStorage.setItem(ORDERS_KEY, JSON.stringify(orders));
 };
-
-// --- Checkout modal ---
 
 const openCheckoutModal: () => void = () => {
   const user: IUser | null = getCurrentUser();
@@ -256,10 +253,12 @@ const openCheckoutModal: () => void = () => {
     document.body.style.overflow = "";
   };
 
-  overlay.querySelector<HTMLButtonElement>(".modal-close")
+  overlay
+    .querySelector<HTMLButtonElement>(".modal-close")
     ?.addEventListener("click", closeModal);
 
-  overlay.querySelector<HTMLButtonElement>(".checkout-cancel")
+  overlay
+    .querySelector<HTMLButtonElement>(".checkout-cancel")
     ?.addEventListener("click", closeModal);
 
   overlay.addEventListener("click", (e) => {

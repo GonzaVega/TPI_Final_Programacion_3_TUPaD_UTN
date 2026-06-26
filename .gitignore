@@ -42,7 +42,7 @@ local.properties
 logs/
 
 # Data
-data/
+backend/data/
 
 # Environment
 .env
@@ -59,3 +59,6 @@ Recursos/
 qprompt/
 docs/
 pnpm-workspace.yaml
+TPI_completo.md
+TPI_Prog3_FoodStore_JPA_Consola.pdf
+

@@ -130,8 +130,6 @@ td:last-child button {
   }
 }
 
-/* --- Modal --- */
-
 .modal-overlay {
   position: fixed;
   inset: 0;
