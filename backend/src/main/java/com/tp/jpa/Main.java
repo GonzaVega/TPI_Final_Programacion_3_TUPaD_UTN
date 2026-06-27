@@ -794,7 +794,7 @@ public class Main {
                         System.out.println("Opción inválida.");
                         break;
                     }
-                    List<Pedido> pedidosPorEstado = pedidoRepo.buscarPorEstado(estadoPed);
+                    List<Pedido> pedidosPorEstado = pedidoRepo.buscarPorEstadoConUsuario(estadoPed);
                     if (pedidosPorEstado.isEmpty()) {
                         System.out.println("No hay pedidos con estado " + estadoPed.name() + ".");
                     } else {

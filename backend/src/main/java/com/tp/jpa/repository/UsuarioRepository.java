@@ -41,7 +41,7 @@ public class UsuarioRepository extends BaseRepository<Usuario> {
             // desde Usuario hacia su colección u.pedidos mediante JOIN.
             // Se filtra por el id del usuario (:uid) y por p.eliminado = false
             // para excluir las bajas lógicas.
-            String jpql = "SELECT p FROM Usuario u JOIN u.pedidos p WHERE u.id = :uid AND p.eliminado = false";
+            String jpql = "SELECT p FROM Usuario u JOIN u.pedidos p JOIN FETCH p.usuario WHERE u.id = :uid AND p.eliminado = false";
             return entityManager.createQuery(jpql, Pedido.class)
                     .setParameter("uid", idUsuario)
                     .getResultList();
